@@ -1,0 +1,15 @@
+# docker-compose.yml
+
+# Ideally these containers would either be built and published/proxied to an artifact store, ECR or similar in a image bakery type process.
+
+version: "3.9"
+services:
+  terraform:
+    image: pkdcloud/terraform:latest
+    build: .docker/terraform
+    environment:
+      - TF_VAR_datadog_api_key
+      - TF_VAR_datadog_app_key
+    volumes:
+      - .:/build
+    working_dir: /build
