@@ -1,6 +1,6 @@
 
 
-# THESE WILL BE IN YOUR ENV THIS IS FOR DEMO ONLY
+# THESE WILL BE IN YOUR ENV THIS IS FOR DEMO ONLY dont export them in your makefile like this
 export TF_VAR_datadog_api_key="abcdef12345"
 export TF_VAR_datadog_app_key="12345abcdef"
 
