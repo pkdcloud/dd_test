@@ -26,8 +26,10 @@ variable "datadog_app_key" {
 
 output "datadog_api_key" {
   value = var.datadog_api_key
+  sensitive = true
 }
 
 output "datadog_app_key" {
   value = var.datadog_app_key
+  sensitive = true
 }
